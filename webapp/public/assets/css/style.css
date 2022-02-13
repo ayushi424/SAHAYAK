@@ -1,0 +1,140 @@
+body{
+  background-color: rgb(242, 245, 247);
+}
+
+.header {
+  overflow: hidden;
+  padding: 6px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .logo {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+}
+
+.header .logo img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  text-align: center;
+  
+}
+
+style{
+  
+    font-size: 1.1em; 
+    letter-spacing: .6px; 
+    padding-left: 50px;
+     margin-right: 10px; 
+line-height: normal; 
+font-family: 'Source Serif Pro', 'serif'; 
+text-align: justify; 
+font-weight: 500;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header-center {
+    float: none;
+  }
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 450px;
+  height: 450px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 25px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 25px;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+.card .card_title a {
+  text-decoration: none;
+}
+.card .card_title p {
+  color:black;
+}
+.card .card_title1 {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+.card .card_title1 a {
+  text-decoration: none;
+}
+.card .card_title1 p {
+  color:white;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
